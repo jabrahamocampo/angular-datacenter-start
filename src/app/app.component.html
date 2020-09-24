@@ -1,0 +1,9 @@
+<!-- Call to other component through the template approach -->
+<!--   
+	<app-navbar (onRefresh)="dashboard.generateData()"></app-navbar>
+	<app-dashboard #dashboard></app-dashboard>
+-->
+
+<!-- ViewChild approach -->
+<app-navbar (onRefresh) = "refresh()"></app-navbar>
+<app-dashboard (onRefresh)="alert($event)"></app-dashboard>
